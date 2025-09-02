@@ -1,5 +1,5 @@
 // CalculatorApp.java
-// Main driver program for the calculator
+// Main driver program for the calculator with continuous operation loop
 
 import java.util.Scanner;
 
@@ -21,14 +21,16 @@ public class CalculatorApp {
             Calc.fact(b);
         }
 
-        while (true) {
+        boolean continueCalc = true;
+
+        while (continueCalc) {
             // Input numbers
             System.out.print("\nEnter first number: ");
             a = sc.nextInt();
             System.out.print("Enter second number: ");
             b = sc.nextInt();
 
-            // Menu
+            // Display menu
             System.out.println("\nChoose operation:");
             System.out.println("1: Addition (+)");
             System.out.println("2: Subtraction (-)");
@@ -46,6 +48,7 @@ public class CalculatorApp {
 
             int op = sc.nextInt();
 
+            // Perform chosen operation
             switch (op) {
                 case 1 -> Calc.add(a, b);
                 case 2 -> Calc.sub(a, b);
@@ -60,17 +63,18 @@ public class CalculatorApp {
                 case 11 -> Calc.logs(a);
                 case 12 -> Calc.fact(a);
                 case 13 -> Calc.rangeSum(a, b);
-                default -> System.out.println("Invalid choice! Please enter 1–13.");
+                default -> System.out.println("Invalid choice! Please enter a number between 1–13.");
             }
 
-            // Continue?
+            // Ask if user wants to continue
             System.out.print("\nDo you want to continue? (y/n): ");
             char choice = sc.next().charAt(0);
             if (choice == 'n' || choice == 'N') {
-                System.out.println("Bye!");
-                break;
+                continueCalc = false;
+                System.out.println("Thank you for using the calculator. Bye!");
             }
         }
+
         sc.close();
     }
 }
