@@ -1,0 +1,11 @@
+# Ignore compiled class files
+*.class
+
+# Ignore executable files
+*.exe
+*.out
+
+# Ignore IDE project settings
+.vscode/
+.idea/
+*.iml
