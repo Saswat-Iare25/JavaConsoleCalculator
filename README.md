@@ -2,7 +2,7 @@
 
 ![Java](https://img.shields.io/badge/Java-17%2B-orange?logo=coffeescript)
 ![Platform](https://img.shields.io/badge/Platform-Console-blue)
-![License](https://img.shields.io/badge/License-MIT-green)
+
 ![Status](https://img.shields.io/badge/Build-Stable-success)
 ![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
 
