@@ -45,6 +45,14 @@ public class CalculatorApp {
             System.out.println("11: Logarithms (ln, log10 of first number)");
             System.out.println("12: Factorial (of first number)");
             System.out.println("13: Range Sum & Average between first and second numbers");
+            System.out.println("14: Absolute Value (|a| and |b|)");
+            System.out.println("15: Cube Roots (∛a and ∛b)");
+            System.out.println("16: Exponential (e^a)");
+            System.out.println("17: Inverse Trigonometric (asin, acos, atan)");
+            System.out.println("18: Hyperbolic Trigonometric (sinh, cosh, tanh)");
+            System.out.println("19: Logarithm with Custom Base");
+            System.out.println("20: Percentage (a% of b)");
+            System.out.println("21: GCD and LCM");
 
             int op = sc.nextInt();
 
@@ -63,7 +71,19 @@ public class CalculatorApp {
                 case 11 -> Calc.logs(a);
                 case 12 -> Calc.fact(a);
                 case 13 -> Calc.rangeSum(a, b);
-                default -> System.out.println("Invalid choice! Please enter a number between 1–13.");
+                case 14 -> Calc.abs(a, b);
+                case 15 -> Calc.cubeRoot(a, b);
+                case 16 -> Calc.exp(a);
+                case 17 -> Calc.inverseTrig(a);
+                case 18 -> Calc.hyperTrig(a);
+                case 19 -> {
+                    System.out.print("Enter base for logarithm: ");
+                    double base = sc.nextDouble();
+                    Calc.logBase(a, base);
+                }
+                case 20 -> Calc.percentage(a, b);
+                case 21 -> Calc.gcdLcm(a, b);
+                default -> System.out.println("Invalid choice! Please enter a number between 1–21.");
             }
 
             // Ask if user wants to continue
