@@ -4,7 +4,7 @@
 ![Platform](https://img.shields.io/badge/Platform-Console-blue)
 
 ![Status](https://img.shields.io/badge/Build-Stable-success)
-![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen)
+
 
 A fully functional, menu-driven **Scientific Calculator** built in **Java**, designed for console execution.  
 This calculator performs **arithmetic**, **trigonometric**, **logarithmic**, **factorial**, and **range operations**, now upgraded with **advanced mathematical features** in Version 2.0.
