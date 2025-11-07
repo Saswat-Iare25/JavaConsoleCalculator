@@ -11,6 +11,7 @@ public class Calc {
         System.out.println("Difference = " + (a - b));
     }
 
+    
     public static void mul(int a, int b) {
         System.out.println("Product = " + (a * b));
     }
