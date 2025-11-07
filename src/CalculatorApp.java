@@ -12,6 +12,7 @@ public class CalculatorApp {
         System.out.print("Do you want to see factorials for both numbers? (y/n): ");
         char showFact = sc.next().charAt(0);
 
+        
         if (showFact == 'y' || showFact == 'Y') {
             System.out.print("Enter first number: ");
             a = sc.nextInt();
