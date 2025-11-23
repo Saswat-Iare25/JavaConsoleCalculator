@@ -1,5 +1,4 @@
-// Calc.java
-// Contains all calculator operations as static methods
+
 
 public class Calc {
 
