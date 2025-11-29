@@ -1,5 +1,5 @@
 // Calc.java
-// Contains all calculator operations 
+//Main class containing all calculator operations 
 public class Calc {
 
     public static void add(int a, int b) {
